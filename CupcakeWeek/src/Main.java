@@ -48,6 +48,11 @@
             drinkMenu.forEach(drinkName -> {
                 System.out.println(drinkName.getName());
             } );
+
+
+
+            Order order = new Order(cupcakeMenu, drinkMenu);
+            order.createOrder();
         }
 
 
@@ -74,7 +79,7 @@
 
             Scanner input = new Scanner(System.in);
             System.out.println();
-            System.out.println("We are deciding on the price for " + drinkCategory.getName() + "."
+            System.out.println("We are deciding on the price for " + drinkCategory.getName() + "." +
                     "\nHere is the description:");
 
             drinkCategory.type();
